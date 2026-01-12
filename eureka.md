@@ -22,3 +22,40 @@
 - うんちく修正画面
 - うんちく一覧画面
 - クイズ作成画面
+
+## ディレクトリ構成（仮）
+EurekaQuiz
+ ├frontend/
+ |  └src/
+ |   ├── app/                # アプリ全体の初期化・設定
+ |   │   ├── router.tsx
+ |   │   ├── provider.tsx
+ |   │   └── index.ts
+ |   ├── features/           # 機能単位
+ |   │   ├── api/            # API通信
+ |   │   ├── components/     # 機能専用UI
+ |   │   ├── hooks/          # 機能専用ロジック
+ |   │   ├── types/          # 機能専用型
+ |   │   └── index.ts        # 外部公開
+ |   ├── components/         # 共通UI
+ |   ├── hooks/              # 共通hooks
+ |   ├── lib/                # 外部ライブラリ設定
+ |   ├── types/              # 共通型
+ |   ├── utils/              # 純粋関数
+ |   ├── assets/             # 静的ファイル
+ |   └--styles/             # グローバルCSS
+ |
+ └backend/
+ 　└src/
+    ├── app.ts              # Express設定     
+    ├── server.ts           # サーバー起動
+    ├── routes/             # ルーティング
+    ├── controllers/        # HTTP処理
+    ├── services/           # ビジネスロジック
+    ├── repositories/       # DB操作
+    ├── middlewares/        # 共通middleware
+    ├── models/             # DBモデル
+    ├── types/              # 型定義
+    ├── utils/              # helper
+    ├── config/             # 設定
+    └── index.ts            # エントリーポイント

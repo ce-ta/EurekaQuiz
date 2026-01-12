@@ -1,0 +1,6 @@
+1, Q.TailwindCSSの初期化で以下のエラーが出た
+    % npx tailwindcss init
+      npm error could not determine executable to run
+   A.TailwindCSSでは4系からインストール方法が大幅に変わったので、3系をインストールして初期化する
+      npm install -D tailwindcss@3.4.13 autoprefixer postcss
+
