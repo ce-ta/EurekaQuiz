@@ -30,7 +30,7 @@ EurekaQuiz
  |   ├── app/                # アプリ全体の初期化・設定
  |   │   ├── router.tsx
  |   │   ├── provider.tsx
- |   │   └── index.ts
+ |   │   └── index.tsx
  |   ├── features/           # 機能単位
  |   │   ├── api/            # API通信
  |   │   ├── components/     # 機能専用UI
