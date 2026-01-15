@@ -4,3 +4,5 @@
    A.TailwindCSSでは4系からインストール方法が大幅に変わったので、3系をインストールして初期化する
       npm install -D tailwindcss@3.4.13 autoprefixer postcss
 
+2, Q.絶対パスでインポートするために@を使ったが、うまく認識されない
+   A.tsconfig.app.jsonとvite.config.jsに設定を書き込む（viteを使っている場合、tsconfigではなく、tsconfig.appを見ている）
